@@ -1,8 +1,10 @@
 const mongoose = require("mongoose");
 
+mongoose.set("strictQuery", false);
+
 const connectDB = async () => {
   const MONGO_URI =
-    "mongodb+srv://shriram123:shriram123@cluster0.kbuzfzv.mongodb.net/mgmt_db?retryWrites=true&w=majority";
+    "mongodb+srv://merndeveloper:mern123@cluster0.gdzdkcv.mongodb.net/merndata?retryWrites=true&w=majority";
 
   const conn = await mongoose.connect(MONGO_URI);
 
